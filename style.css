@@ -1,0 +1,136 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+
+:root{
+  --hue-neutral:200;
+  --hue-wrong:0;
+  --hue-correct:145;
+}
+
+body{
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct{
+  --hue: var(--hue-correct);
+}
+
+body.wrong{
+  --hue: var(--hue-wrong);
+}
+
+#question{
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container{
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+
+}
+
+.btn-grid{
+  display: grid;
+  grid-gap: 10px;
+  margin: 20px 40px;;
+
+}
+
+
+
+.btn{
+  --hue : var(--hue-neutral);
+  border: 5px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px, 10px;
+  color: white;
+  outline: none;
+  font-size: 25px;
+}
+
+.btn:hover{
+  border-color: black;
+}
+
+.btn.correct{
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong{
+  --hue: var(--hue-wrong);
+}
+
+#controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#answer-btn, #next-btn, #previous-btn{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px, 20px;
+  margin-right: 25px;
+  border: 2px solid #E1AA7D;
+  border-radius: 5px;
+  color: #DEFFFC;
+  background-color: #153243;
+}
+
+#answer-btn:hover, #next-btn:hover, #previous-btn:hover{
+  font-size: 25px;
+  border: 5px solid #E1AA7D;
+}
+
+
+
+.hide{
+    display: none;
+
+}
+
+.startContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-btn{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+
+  color: white;
+  background: #5386E4;
+}
+
+.selected{
+  font-size: 30px;
+  border: 8px solid #7b2cbf;
+
+}
