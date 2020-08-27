@@ -110,6 +110,19 @@ body.wrong{
 
 }
 
+.scoreContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#score{
+  background: #14213d;
+  color: #fca311;
+  font-size: 25px;
+}
+
 .startContainer{
   display: flex;
   justify-content: center;
