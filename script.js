@@ -7,6 +7,7 @@ const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const scoreShow = document.getElementById('score');
 let score = 0;
+var delayInMilliseconds = 2000;
 
 let shuffledQuestions, currentQuestionIndex;
 
@@ -54,6 +55,7 @@ function nextQuestion(){
 }
 
 function showQuestion(question){
+  clearStatusClass(document.body);
   if(currentQuestionIndex == 10){
     questionContainerElement.classList.add('hide');
     previousbtn.classList.add('hide');
@@ -125,8 +127,12 @@ function checkAnswer(){
   if(correct){
     score++;
   }
+
   console.log(score);
-  next();
+  setTimeout(function() {
+    next();
+  }, delayInMilliseconds);
+
 }
 
 function setStatusClass(element, correct){
