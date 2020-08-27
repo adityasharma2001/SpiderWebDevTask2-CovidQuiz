@@ -6,7 +6,9 @@ const nextbtn = document.getElementById('next-btn');
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const scoreShow = document.getElementById('score');
+const name = window.prompt('Enter Your Name: ');
 let score = 0;
+
 
 let shuffledQuestions, currentQuestionIndex;
 
@@ -62,7 +64,7 @@ function showQuestion(question){
     startButton.classList.remove('hide');
     startButton.innerText='RESTART';
     scoreShow.classList.remove('hide');
-    scoreShow.innerText= 'SCORE: ' + score;
+    scoreShow.innerText= name +  ' SCORED: ' + score;
 
   }
   else{
