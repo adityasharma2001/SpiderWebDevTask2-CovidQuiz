@@ -147,3 +147,25 @@ body.wrong{
   border: 8px solid #7b2cbf;
 
 }
+
+.navbar{
+  background-color: #14213d;
+  color: #fca311;
+  margin-right: 30px;
+}
+
+#q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10{
+  background-color: #e9c46a;
+  color: #006d77;
+}
+
+li{
+  margin: 10px;
+}
+
+.timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
