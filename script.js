@@ -122,11 +122,11 @@ nextbtn.addEventListener('click', next);
 previousbtn.addEventListener('click', previous);
 function next(){
   currentQuestionIndex++;
-  nextQuestion();
+  navQuestion(shuffledQuestions[currentQuestionIndex])
 }
 function previous(){
   currentQuestionIndex--;
-  previousQuestion();
+  navQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 let time = 300
 function startGame(){
