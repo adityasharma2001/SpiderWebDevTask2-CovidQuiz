@@ -255,7 +255,8 @@ function checkAnswer(){
   }
   console.log(score);
   setTimeout(function() {
-    next();
+    currentQuestionIndex++;
+    nextQuestion();
   }, delayInMilliseconds);
 }
 
